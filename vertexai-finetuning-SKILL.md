@@ -120,7 +120,7 @@ print("Starting tuning job...")
 try:
     # チューニングジョブの作成
     job = sft.train(
-        source_model="gemini-2.5-flash-preview-09-2025",  # GUIで確認した正確なモデル名
+        source_model="gemini-2.5-flash",  # 公式サイトで確認した正確なモデル名
         train_dataset=f"gs://{BUCKET}/tuning_data.jsonl",
         tuned_model_display_name="your-tuned-model-v1",
         epochs=3,  # epoch_countではなくepochs
